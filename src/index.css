@@ -1,0 +1,11 @@
+@import '../node_modules/@blueprintjs/core/dist/blueprint.css';
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: sans-serif;
+}
