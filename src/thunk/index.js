@@ -11,7 +11,7 @@ export const loadMarvel = () => dispatch => {
   fetch(url)
     .then(res => res.json())
     .then(({data}) => dispatch(marvelLoaded(data.results)))
-    .catch(err => console.log(err))
+    .catch(err => console.log(err))// eslint-disable-line no-console
 }
 
 export const loadCharacterDetail = (pageId, characterId) => dispatch => {
@@ -23,5 +23,5 @@ export const loadCharacterDetail = (pageId, characterId) => dispatch => {
       dispatch(characterBio(data.results[0]));  
       return (dispatch(changePage(pageId)))
     })
-    .catch(err => console.log(err))
+    .catch(err => console.log(err))// eslint-disable-line no-console
 }

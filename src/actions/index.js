@@ -5,4 +5,4 @@ export const CHANGE_PAGE = 'CHANGE_PAGE';
 export const changePage = (pageId) => ({ type: CHANGE_PAGE, payload: {pageId}}) 
 
 export const CHARACTERS_DETAIL = 'CHARACTERS_DETAIL';
-export const characterBio = (characterBio) => ({ type: CHARACTERS_DETAIL, payload: { characterBio }}) 
+export const characterBio = (characterBiography) => ({ type: CHARACTERS_DETAIL, payload: { characterBiography }}) 
