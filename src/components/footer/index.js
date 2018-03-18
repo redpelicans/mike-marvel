@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, NavbarGroup, NavbarHeading } from '@blueprintjs/core';
 
-const Footer  = ({ changePage }) => {
+const Footer  = () => {
   return (
     <Navbar>
       <NavbarGroup>
@@ -13,5 +13,7 @@ const Footer  = ({ changePage }) => {
     </Navbar>
   )
 }
+
+
 
 export default Footer;

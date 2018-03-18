@@ -6,12 +6,8 @@
     "@blueprintjs/core": "^1.35.2",
     "crypto": "^1.0.1",
     "deep-freeze": "0.0.1",
-    "formik": "^0.11.5",
     "glamor": "^2.20.40",
     "glamorous": "^4.11.4",
-    "jquery": "^3.3.1",
-    "lodash": "^4.17.5",
-    "moment": "^2.20.1",
     "namor": "^1.0.1",
     "prop-types": "^15.6.0",
     "ramda": "^0.25.0",
@@ -20,28 +16,27 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.1.0",
-    "react-select": "^1.2.1",
-    "react-select2": "^4.0.3",
-    "react-table": "^6.7.6",
     "react-test-renderer": "^16.2.0",
-    "recompose": "^0.26.0",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "reselect": "^3.0.1",
-    "select2": "^4.0.6-rc.1",
-    "yup": "^0.24.0"
+    "reselect": "^3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest src --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "devDependencies": {
     "babel-polyfill": "^6.26.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-react": "^7.7.0",
     "jest": "^22.1.4"
   }
 }

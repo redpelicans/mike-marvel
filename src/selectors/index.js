@@ -1,8 +1,17 @@
-// import { map, reverse, prop, sortBy, sort, reduce } from 'ramda';
-// import { createSelector } from 'reselect';
+import { createSelector } from 'reselect';
 
-export const getCharacters = state => state.characters;
-export const getCharacterBio = state => state.characterBio;
-export const getPageId = state => state.pageId;
-export const getSelectOptions = state => state.options;
-export const getIsPending = state => state.isPending;
+
+const characters = state => state.characters;
+export const getCharacters = createSelector(characters, c => c) 
+
+const characterBio = state => state.characterBio;
+export const getCharacterBio = createSelector(characterBio, c => c) 
+
+const pageId = state => state.pageId;
+export const getPageId = createSelector(pageId, p => p) 
+
+const selectOptions = state => state.options;
+export const getSelectOptions = createSelector(selectOptions, s => s) 
+
+const isPending = state => state.isPending;
+export const getIsPending = createSelector(isPending, i => i) 

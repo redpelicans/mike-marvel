@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import glamorous from 'glamorous';
 import { map } from 'ramda';
 import CharacterDetail from '../characterDetail';
@@ -28,5 +29,11 @@ const Body = ({characters = [], loadCharacterDetail, pageId = ''}) => {
     </Fragment>
   );
 }
+
+Body.propTypes = {
+  characters: PropTypes.array,
+  loadCharacterDetail: PropTypes.func.isRequired,
+  pageId: PropTypes.string,
+};
 
 export default Body;
